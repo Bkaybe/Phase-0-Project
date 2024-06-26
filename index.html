@@ -163,7 +163,9 @@
           <label for="Number">Number: <input type="text" /></label>
           <br />
           <label for="submit button"
-            ><a href="#"><button type="submit">SUBMIT</button></a></label
+            ><a href="#"
+              ><button type="submit" id="submitbtn">SUBMIT</button></a
+            ></label
           >
         </form>
       </div>
@@ -176,5 +178,12 @@
       </div>
     </section>
     <!--End of Contact Section-->
+
+    <script>
+      const button = document.getElementById("submitbtn");
+      button.addEventListener("click", function () {
+        alert("Details Submitted");
+      });
+    </script>
   </body>
 </html>
